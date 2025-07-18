@@ -1,6 +1,13 @@
 {
+  "name": "strapi-plausible",
+  "description": "Show a Plausible analytics within Strapi.",
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": [
+    "strapi",
+    "plausible",
+    "analytics",
+    "plugin"
+  ],
   "type": "commonjs",
   "exports": {
     "./package.json": "./package.json",
@@ -58,12 +65,10 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "strapi-plausible",
+    "name": "plausible",
     "displayName": "Plausible",
     "description": "Show a Plausible analytics within Strapi."
   },
-  "name": "strapi-plausible",
-  "description": "Show a Plausible analytics within Strapi.",
   "license": "MIT",
   "repository": {
     "type": "git",
