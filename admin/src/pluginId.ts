@@ -1,1 +1,1 @@
-export const PLUGIN_ID = 'strapi-plugin-plausible';
+export const PLUGIN_ID = 'strapi-plausible';

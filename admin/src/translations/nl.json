@@ -1,5 +1,5 @@
 {
-    "strapi-plugin-plausible": "Plausible Analytics",
+    "strapi-plausible": "Plausible Analytics",
     "page.title": "Analytics",
     "page.description": "Bekijk jouw website-analysegegevens."
 }
