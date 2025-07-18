@@ -1,0 +1,7 @@
+{
+    "strapi-plugin-plausible": "Plausible Analytics",
+    "menu.title": "Analytics",
+    "page.title": "Analytics",
+    "page.description": "View your website's page visits, and other analytics data tracked by Plausible.",
+    "empty.state.content": "You don't have any domains configured."
+}
