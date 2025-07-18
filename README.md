@@ -52,7 +52,7 @@ You can create a shared link in Plausible by going to _Site settings › Visibil
 It looks something like this:
 
 ```text
-https://plausible.io/share/tracked-site.com?auth=abc123
+https://plausible.io/share/tracked-site.com?auth=lNU0nKCmnSxs3HjjWOKtX
 ```
 
 ⚠️ Make sure not to enable password protection for this link
