@@ -58,11 +58,11 @@
   },
   "strapi": {
     "kind": "plugin",
-    "name": "strapi-plugin-plausible",
+    "name": "strapi-plausible",
     "displayName": "Plausible",
     "description": "Show a Plausible analytics within Strapi."
   },
-  "name": "strapi-plugin-plausible",
+  "name": "strapi-plausible",
   "description": "Show a Plausible analytics within Strapi.",
   "license": "MIT",
   "repository": {
