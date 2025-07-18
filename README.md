@@ -7,6 +7,7 @@
 </div>
 <br/>
 <br/>
+
 A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](https://plausible.io) analytics dashboards. The Strapi Plausible plugin is inspired by [it's predecessor](https://market.strapi.io/plugins/strapi-plugin-plausible) created by [Devtastic](https://github.com/its-devtastic).
 
 ## Supported Strapi version
