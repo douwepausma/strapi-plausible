@@ -14,6 +14,9 @@ A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](
 
 Currently only Strapi v5 is supported. If you are using Strapi v4 use [this plugin](https://market.strapi.io/plugins/strapi-plugin-plausible) by [Devtastic](https://github.com/its-devtastic) instead.
 
+## Screenshot
+<img src="public/assets/screenshot.png" alt="Screenshot - Strapi Plausible plugin" />
+
 ## Installation
 
 With `npm`
