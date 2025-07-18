@@ -1,5 +1,5 @@
 {
-    "strapi-plugin-plausible": "Plausible Analytics",
+    "strapi-plausible": "Plausible Analytics",
     "menu.title": "Analytics",
     "page.title": "Analytics",
     "page.description": "View your website's page visits, and other analytics data tracked by Plausible.",

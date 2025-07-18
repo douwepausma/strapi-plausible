@@ -22,7 +22,7 @@ const HomePage = () => {
 
   const fetchConfig = async () => {
     try {
-      const response = await fetch('/strapi-plugin-plausible/config');
+      const response = await fetch('/plausible/config');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -56,7 +56,7 @@ const HomePage = () => {
           <Typography variant="alpha" fontWeight="bold" textColor="neutral800">
             {formatMessage({ id: 'page.title' })}
           </Typography>
-          <Typography variant="epsilon" textColor="neutral600"ß>
+          <Typography variant="epsilon" textColor="neutral600">
             {formatMessage({ id: 'page.description' })}
           </Typography>
 
