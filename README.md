@@ -5,9 +5,8 @@
   <h1>Strapi + Plausible</h1>
   <p>Add one or more Plausible analytics dashboards to Strapi</p>
 </div>
-
----
-
+<br/>
+<br/>
 A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](https://plausible.io) analytics dashboards. The Strapi Plausible plugin is inspired by [it's predecessor](https://market.strapi.io/plugins/strapi-plugin-plausible) created by [Devtastic](https://github.com/its-devtastic).
 
 ## Supported Strapi version
