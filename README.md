@@ -1,5 +1,5 @@
 <div align="center" width="150px">
-  <img style="width: 150px; height: auto;" src="public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
+  <img style="width: 150px; height: auto;" src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
 </div>
 <div align="center">
   <h1>Strapi + Plausible</h1>
@@ -15,7 +15,7 @@ A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](
 Currently only Strapi v5 is supported. If you are using Strapi v4 use [this plugin](https://market.strapi.io/plugins/strapi-plugin-plausible) by [Devtastic](https://github.com/its-devtastic) instead.
 
 ## Screenshot
-<img src="public/assets/screenshot.png" alt="Screenshot - Strapi Plausible plugin" />
+<img src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/screenshot.png" alt="Screenshot - Strapi Plausible plugin" />
 
 ## Installation
 
