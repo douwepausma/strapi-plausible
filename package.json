@@ -1,6 +1,6 @@
 {
   "name": "strapi-plausible",
-  "description": "Show a Plausible analytics within Strapi.",
+  "description": "Show Plausible analytics within Strapi.",
   "version": "0.0.1",
   "keywords": [
     "strapi",
@@ -50,7 +50,7 @@
     "kind": "plugin",
     "name": "plausible",
     "displayName": "Plausible",
-    "description": "Show a Plausible analytics within Strapi."
+    "description": "Show Plausible analytics within Strapi."
   },
   "license": "MIT",
   "repository": {
