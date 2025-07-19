@@ -1,5 +1,5 @@
 <div align="center" width="150px">
-  <img style="width: 150px; height: auto;" src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
+  <img style="width: 150px; max-width: 150px; height: auto;" src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
 </div>
 <div align="center">
   <h1>Strapi + Plausible</h1>
