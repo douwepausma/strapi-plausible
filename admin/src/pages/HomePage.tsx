@@ -1,5 +1,5 @@
 import { Main } from '@strapi/design-system';
-import React from 'react';
+import * as React from 'react';
 import { useIntl } from 'react-intl';
 import { Typography } from '@strapi/design-system';
 import { SingleSelect, SingleSelectOption } from '@strapi/design-system';
