@@ -1,7 +1,7 @@
 {
   "name": "strapi-plausible",
   "description": "Show Plausible analytics within Strapi.",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "keywords": [
     "strapi",
     "plausible",
@@ -72,11 +72,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com//douwepausma.git"
+    "url": "git+ssh://git@github.com/douwepausma/strapi-plausible.git"
   },
   "bugs": {
-    "url": "https://github.com//douwepausma/issues"
+    "url": "https://github.com/douwepausma/strapi-plausible/issues"
   },
-  "homepage": "https://github.com//douwepausma#readme",
+  "homepage": "https://github.com/douwepausma/strapi-plausible#readme",
   "author": "douwepausma <mail@douwepausma.nl>"
 }
