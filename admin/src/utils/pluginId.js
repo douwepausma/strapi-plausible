@@ -1,5 +1,5 @@
-// const pluginPkg = require("../../../package.json");
+const pluginPkg = require("../../../package.json");
 
-const pluginId = 'strapi-plausible';
+const pluginId = pluginPkg.name;
 
 module.exports = pluginId;
