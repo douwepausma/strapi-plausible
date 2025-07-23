@@ -1,35 +1,32 @@
 <div align="center" width="150px">
-  <img style="width: 150px; height: auto;" src="public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
+  <img style="width: 150px; max-width: 150px; height: auto;" src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/logo.png" alt="Logo - Strapi Plausible plugin" />
 </div>
 <div align="center">
-  <h1>Strapi v4 - Plausible plugin</h1>
-  <p>Add your Plausible analytics dashboard to Strapi</p>
-  <a href="https://www.npmjs.org/package/strapi-plugin-plausible">
-    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/its-devtastic/strapi-plugin-plausible?label=npm&logo=npm">
-  </a>
-  <a href="https://www.npmjs.org/package/strapi-plugin-plausible">
-    <img src="https://img.shields.io/npm/dm/strapi-plugin-plausible.svg" alt="Monthly download on NPM" />
-  </a>
+  <h1>Strapi + Plausible</h1>
+  <p>Add one or more Plausible analytics dashboards to Strapi</p>
 </div>
+<br/>
+<br/>
 
----
+A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](https://plausible.io) analytics dashboards. The Strapi Plausible plugin is inspired by [it's predecessor](https://market.strapi.io/plugins/strapi-plugin-plausible) created by [Devtastic](https://github.com/its-devtastic).
 
-A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](https://plausible.io) analytics dashboards.
+## Supported Strapi versions
+- Strapi v5 ```npm i strapi-plausible@2.x.x```
+- Strapi v4 ```yarn add strapi-plausible@1.x.x``` (or use [this plugin](https://market.strapi.io/plugins/strapi-plugin-plausible) by [Devtastic](https://github.com/its-devtastic), no multi-dashboard support).
 
-## Supported Strapi version
-
-Currently only Strapi v4 is supported.
+## Screenshot
+<img src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/screenshot.png" alt="Screenshot - Strapi Plausible plugin" />
 
 ## Installation
 
 With `npm`
 ```bash
-npm install strapi-plugin-plausible
+npm install strapi-plausible
 ```
 
 With `yarn`
 ```bash
-yarn add strapi-plugin-plausible
+yarn add strapi-plausible
 ```
 
 In the `config/plugins.js` file add:
@@ -39,7 +36,13 @@ module.exports = ({ env }) => ({
   // ...other plugins
   plausible: {
     config: {
-      sharedLink: env("PLAUSIBLE_SHARED_LINK")
+      plausibleInstance: 'https://plausible.io', // or your self-hosted url
+      domains: [
+        {
+          name: 'tracked-site.com', // name of the plausible site
+          auth: 'lNU0nKCmnSxs3HjjWOKtX' // auth token
+        }
+      ]
     }
   }
 })
@@ -49,13 +52,13 @@ You can create a shared link in Plausible by going to _Site settings › Visibil
 It looks something like this:
 
 ```text
-https://plausible.io/share/example.com?auth=abc123
+https://plausible.io/share/tracked-site.com?auth=lNU0nKCmnSxs3HjjWOKtX
 ```
 
-☝️ Make sure not to enable password protection for this link
+⚠️ Make sure not to enable password protection for this link
 
-☝️ If you're using the `strapi::security` middleware with CSP enabled, make sure
-to allow `plausible.io` as a `frame-src`. Your `config/middlewares.js` should look something like:
+⚠️ If you're using the `strapi::security` middleware with CSP enabled, make sure
+to allow `plausible.io` or your self-hosted instance (e.g. `analytics.example.com`) as a `frame-src`. Your `config/middlewares.js` should look something like:
 
 ```js
  {
@@ -68,17 +71,8 @@ to allow `plausible.io` as a `frame-src`. Your `config/middlewares.js` should lo
         ...
 ```
 
-## Support
-
-For Strapi documentation, please go to [the official Strapi documentation](https://strapi.io/documentation/).
-
-For questions and issues with this plugin use one of the following channels:
-
-- [GitHub](https://github.com/its-devtastic/strapi-plugin-plausible/issues) (Bug reports, Contributions, Questions and Discussions)
-- [E-mail](mailto:hi@devtastic.co) - We'll respond as soon as possible
-
 ## 📝 License
 
 [MIT License](LICENSE.md) 
 
-Made in Utrecht by [Devtastic](https://devtastic.build/) 👨‍💻🌱🇪🇺.
+Made in 🇳🇱 by [@douwepausma](https://github.com/douwepausma) inspired by [Devtastic](https://devtastic.build/).
