@@ -10,9 +10,9 @@
 
 A plugin for [Strapi](https://github.com/strapi/strapi) that embeds [Plausible](https://plausible.io) analytics dashboards. The Strapi Plausible plugin is inspired by [it's predecessor](https://market.strapi.io/plugins/strapi-plugin-plausible) created by [Devtastic](https://github.com/its-devtastic).
 
-## Supported Strapi version
-
-Currently only Strapi v5 is supported. If you are using Strapi v4 use [this plugin](https://market.strapi.io/plugins/strapi-plugin-plausible) by [Devtastic](https://github.com/its-devtastic) instead.
+## Supported Strapi versions
+- Strapi v5 ```npm i strapi-plausible@2.x.x```
+- Strapi v4 ```yarn add strapi-plausible@1.x.x``` (or use [this plugin](https://market.strapi.io/plugins/strapi-plugin-plausible) by [Devtastic](https://github.com/its-devtastic), no multi-dashboard support).
 
 ## Screenshot
 <img src="https://github.com/douwepausma/strapi-plausible/blob/main/public/assets/screenshot.png" alt="Screenshot - Strapi Plausible plugin" />
