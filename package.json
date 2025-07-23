@@ -1,82 +1,46 @@
 {
   "name": "strapi-plausible",
-  "description": "Show a Plausible analytics within Strapi.",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "description": "Add your Plausible analytics dashboard to Strapi.",
+  "strapi": {
+    "displayName": "Plausible",
+    "name": "plausible",
+    "description": "Add your Plausible analytics dashboard to Strapi.",
+    "kind": "plugin"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@strapi/strapi": "^4.0.0",
+    "prettier": "^3.2.5"
+  },
+  "author": {
+    "name": "Devtastic",
+    "email": "hi@devtastic.io",
+    "url": "https://devtastic.io"
+  },
+  "maintainers": [
+    {
+      "name": "Leon van der Grient",
+      "email": "leon@devtastic.io",
+      "url": "https://github.com/StructuralRealist"
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/its-devtastic/strapi-plugin-plausible",
+    "type": "git"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
   "keywords": [
     "strapi",
     "plausible",
     "analytics",
     "plugin"
   ],
-  "type": "commonjs",
-  "exports": {
-    "./package.json": "./package.json",
-    "./strapi-admin": {
-      "types": "./dist/admin/src/index.d.ts",
-      "source": "./admin/src/index.ts",
-      "import": "./dist/admin/index.mjs",
-      "require": "./dist/admin/index.js",
-      "default": "./dist/admin/index.js"
-    },
-    "./strapi-server": {
-      "types": "./dist/server/src/index.d.ts",
-      "source": "./server/src/index.ts",
-      "import": "./dist/server/index.mjs",
-      "require": "./dist/server/index.js",
-      "default": "./dist/server/index.js"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "strapi-plugin build",
-    "watch": "strapi-plugin watch",
-    "watch:link": "strapi-plugin watch:link",
-    "verify": "strapi-plugin verify",
-    "test:ts:front": "run -T tsc -p admin/tsconfig.json"
-  },
-  "dependencies": {
-    "@strapi/design-system": "^2.0.0-rc.29",
-    "@strapi/icons": "^2.0.0-rc.29",
-    "react-intl": "^7.1.11",
-    "zod": "^4.0.5"
-  },
-  "devDependencies": {
-    "@strapi/sdk-plugin": "^5.3.2",
-    "@strapi/strapi": "^5.18.0",
-    "@strapi/typescript-utils": "^5.18.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "prettier": "^3.6.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.1",
-    "styled-components": "^6.1.19",
-    "typescript": "^5.8.3"
-  },
-  "peerDependencies": {
-    "@strapi/sdk-plugin": "^5.3.2",
-    "@strapi/strapi": "^5.18.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.30.1",
-    "styled-components": "^6.1.19"
-  },
-  "strapi": {
-    "kind": "plugin",
-    "name": "plausible",
-    "displayName": "Plausible",
-    "description": "Show a Plausible analytics within Strapi."
-  },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com//douwepausma.git"
-  },
-  "bugs": {
-    "url": "https://github.com//douwepausma/issues"
-  },
-  "homepage": "https://github.com//douwepausma#readme",
-  "author": "douwepausma <mail@douwepausma.nl>"
+  "peerDependencies": {
+    "@strapi/strapi": "^4.0.0"
+  }
 }

@@ -1,5 +1,7 @@
 {
     "strapi-plausible": "Plausible Analytics",
+    "menu.title": "Analytics",
     "page.title": "Analytics",
-    "page.description": "Bekijk jouw website-analysegegevens."
+    "page.description": "Bekijk jouw website-analysegegevens.",
+    "empty.state.content": "Je hebt geen domeinnamen geconfigureerd."
 }

@@ -1,23 +1,22 @@
+/*
+ *
+ * Plausible analytics dashboard.
+ *
+ */
+
+import React, { memo, useEffect, useState } from "react";
 import { Main } from '@strapi/design-system';
-import React from 'react';
+// import * as React from 'react';
 import { useIntl } from 'react-intl';
 import { Typography } from '@strapi/design-system';
 import { SingleSelect, SingleSelectOption } from '@strapi/design-system';
 import { EmptyStateLayout } from '@strapi/design-system';
-import { EmptyData } from '@strapi/icons/symbols';
+// import { EmptyData } from '@strapi/icons';
+import pluginId from "../../utils/pluginId";
 
-type Domain = {
-  name: string;
-  auth: string;
-}
-type Config = {
-  plausibleInstance: string;
-  domains: Domain[];
-}
-
-const HomePage = () => {
-  const [config, setConfig] = React.useState<Config | null>(null);
-  const [selectedDomain, setSelectedDomain] = React.useState<Domain | null>(null);
+const Dashboard = () => {
+  const [config, setConfig] = React.useState(null);
+  const [selectedDomain, setSelectedDomain] = React.useState(null);
   const { formatMessage } = useIntl();
 
   const fetchConfig = async () => {
@@ -54,19 +53,19 @@ const HomePage = () => {
       }}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="alpha" fontWeight="bold" textColor="neutral800">
-            {formatMessage({ id: 'page.title' })}
+            {formatMessage({ id: `${pluginId}.page.title` })}
           </Typography>
           <Typography variant="epsilon" textColor="neutral600">
-            {formatMessage({ id: 'page.description' })}
+            {formatMessage({ id: `${pluginId}.page.description` })}
           </Typography>
 
         </div>
         <SingleSelect
-          label={formatMessage({ id: 'select.domain.label', defaultMessage: 'Select Domain' })}
-          placeholder={formatMessage({ id: 'select.domain.placeholder', defaultMessage: 'Select a domain' })}
+          label={formatMessage({ id: `${pluginId}.select.domain.label`, defaultMessage: 'Select Domain' })}
+          placeholder={formatMessage({ id: `${pluginId}.select.domain.placeholder`, defaultMessage: 'Select a domain' })}
           disabled={!config?.domains.length}
           value={selectedDomain ? selectedDomain.name : ''}
-          onChange={(value:string) => {
+          onChange={(value) => {
             const domain = config?.domains.find(d => d.name === value);
             setSelectedDomain(domain || null);
           }}
@@ -95,14 +94,14 @@ const HomePage = () => {
           padding: '40px 24px 0px 24px',
           margin: '0 auto',
         }}>
-          <EmptyStateLayout
+          {/* <EmptyStateLayout
             icon={<EmptyData height={500} width={500} />}
             content={formatMessage({ id: 'empty.state.content', defaultMessage: 'You don\'t have any domains configured.' })}
-          />
+          /> */}
         </div>
       )}
     </Main>
   );
 };
 
-export { HomePage };
+export default memo(Dashboard);
