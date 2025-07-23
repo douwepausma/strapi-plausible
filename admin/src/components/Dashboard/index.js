@@ -6,12 +6,11 @@
 
 import React, { memo, useEffect, useState } from "react";
 import { Main } from '@strapi/design-system';
-// import * as React from 'react';
 import { useIntl } from 'react-intl';
 import { Typography } from '@strapi/design-system';
 import { SingleSelect, SingleSelectOption } from '@strapi/design-system';
 import { EmptyStateLayout } from '@strapi/design-system';
-// import { EmptyData } from '@strapi/icons';
+import { EmptyData } from '@strapi/icons';
 import pluginId from "../../utils/pluginId";
 
 const Dashboard = () => {
@@ -94,10 +93,10 @@ const Dashboard = () => {
           padding: '40px 24px 0px 24px',
           margin: '0 auto',
         }}>
-          {/* <EmptyStateLayout
+          <EmptyStateLayout
             icon={<EmptyData height={500} width={500} />}
             content={formatMessage({ id: 'empty.state.content', defaultMessage: 'You don\'t have any domains configured.' })}
-          /> */}
+          />
         </div>
       )}
     </Main>
